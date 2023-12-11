@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    mix-blend-mode:difference;
+    height: 10px;
+    width: 10px ;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#main{
+    width: 100%;
+    background-color: black;
+}
+
+#hero{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav a{
+
+    text-decoration: none;
+    color:white;
+    text-transform: capitalize;
+}
+
+#nav h4{
+    font-weight: 600;
+}
+
+#headings{
+    margin-left: 22px;
+    margin-top: 16vh;    
+    opacity: .65;
+    text-transform: uppercase;
+}
+
+#headings h1{
+    font-weight: 500;
+    font-size: 9vw;
+    line-height: .9;
+}
+#headingsblock h5{
+    font-weight: 500;
+    /* display: flex;
+    align-items: end;
+    flex-direction: column; */
+}
+#headingsblock {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 9vw;
+    text-align: end;
+}
+
+#chotiheadings{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    text-align: end;
+    padding-right: 18px;
+}
+
+#chotiheadings h4{
+    text-transform: uppercase;
+    font-weight:550;
+    margin-top: .5vw;
+    font-size: 1.5vw;
+}
+
+#herofooter{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    bottom: 0;
+    position: absolute;
+    padding: 1.5vw;
+}
+
+#herofooter a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#iconset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#circles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+#second{
+    color: white;
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    padding-top: 180px;
+    padding-right: 10vw;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-top: 1px solid #888;
+    width: 100%;
+    padding: 3vw 1vw;
+    padding-right: 0;
+}
+
+.elem h1 {
+    opacity: .7;
+    color: white;
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+
+.elem img{
+    position: absolute;
+    z-index: 999;
+    height: 140%;
+    /* display: none; */
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-right: 5vw;
+    padding-top: 7vh;
+    gap: 30px;
+    padding-left: 40vw;
+}
+
+#aboutimg img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#textabout{
+    width: 35vw;
+}
+#textabout p{
+    font-size: 1.5vw;
+    padding-bottom: 25px;
+}
+#textabout h4{
+    text-transform: uppercase;
+   padding-bottom: 12px;
+}
+
+#textabout a{
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 18px;
+    text-decoration: none;
+    /* box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.205),inset -20px 60px rgba(109, 39, 39, 0.234); */
+}
+
+#textabout a:hover{
+    background-color: #fff;
+    color: black;
+    transition: 1s;
+}
+
+#subscribe{
+    background-color: black;
+    color: white;
+    padding: 2vw;
+    padding-bottom: 10vw;
+}
+
+#subscribe h5{
+    opacity: .7;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+#subscribe h3{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#footer{
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: black;
+}
+
+
+#footerleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#footerright a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+#footerright{
+    display: flex;
+    gap: 10px;
+}
